@@ -11,3 +11,8 @@ inline fun <T> executionTimeMillis(
 
     return result
 }
+
+fun main() {
+    val test = Array(2000000) {it + 1}
+    println(test.joinToString(", "))
+}
